@@ -1,0 +1,32 @@
+body {
+  font-family: Georgia, serif;
+  padding: 15px;
+}
+
+.contents {
+  border: 1px solid black;
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.summary,
+.category {
+  padding-bottom: 20px;
+}
+
+.summary {
+  padding-top: 25px;
+}
+
+h1 {
+  font-size: 28pt;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+h3 {
+  font-size: 12pt;
+}
