@@ -1,3 +1,7 @@
 body {
   font-family: Georgia, serif;
 }
+
+.hidden {
+  opacity: 0;
+}
