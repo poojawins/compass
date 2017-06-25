@@ -38,8 +38,8 @@ h3 {
 }
 
 .score {
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
   border: 1px solid black;
   border-radius: 50%;
 }
@@ -58,4 +58,18 @@ h3 {
 
 .green {
   background-color: green;
+}
+
+.score-container {
+
+}
+
+.score-color-div {
+  float: left;
+  width: 2%;
+}
+
+.score-copy {
+  margin-left: 25px;
+  width: 98%;
 }
