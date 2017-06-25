@@ -19,7 +19,7 @@ $(document).ready(function() {
       lookup: countries,
       onSelect: function (suggestion) {
         if (suggestion.data == 'hr') {
-          window.location = "/result.html"
+          window.location = "./result.html"
         };
       },
       beforeRender: function (container) {
