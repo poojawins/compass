@@ -10,6 +10,7 @@ body {
   margin-bottom: 15px;
 }
 
+.contents-header,
 .summary,
 .category {
   padding-bottom: 20px;
@@ -34,4 +35,16 @@ h3 {
 .resources {
   padding: 5px;
   margin-bottom: 15px;
+}
+
+.score {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.resources-links li {
+  margin: 10px 0;
 }
