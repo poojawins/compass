@@ -1,4 +1,4 @@
-body {
+.result-body {
   font-family: Georgia, serif;
   padding: 15px;
 }
@@ -72,4 +72,8 @@ h3 {
 .score-copy {
   margin-left: 25px;
   width: 98%;
+}
+
+.store-name {
+  margin-top: 20px;
 }
