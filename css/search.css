@@ -14,8 +14,26 @@ html, body {
 }
 
 .home .logo {
-  width: 350px;
-  margin-bottom: 20px;
+  height: 100px;
+  margin-bottom: 40px;
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .logo-inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home .logo-inner h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #777;
+	text-align: center;
+	margin-top: 4px;
+	font-weight: lighter; text-transform: uppercase; letter-spacing: 1px; 
 }
 
 .home .footer {
@@ -28,7 +46,7 @@ html, body {
 }
 
 .home .footer a {
-  font-family: "HelveticaNeue-Light";
+  font-family: 'Source Sans Pro', sans-serif;
   cursor: pointer;
   font-size: 13px;
   color: #777;
@@ -42,6 +60,7 @@ html, body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .home .search-container {
@@ -59,7 +78,7 @@ html, body {
   padding: 12px 15px;
   border: 1px solid #eee;
   box-shadow: 1px 1px 1px #ccc;
-  font-family: "HelveticaNeue-Light";
+  font-family: 'Source Sans Pro', sans-serif;
   outline: none;
 }
 
@@ -75,10 +94,9 @@ html, body {
   border-radius: 2px;
   cursor: pointer;
   outline: none; 
-  font-family: "HelveticaNeue-Medium";
-  background-color: #82d762;
-  font-weight: 300;
-  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: white;
+  color: #52bad5;
 }
 
 .home button.login:hover {
@@ -93,9 +111,8 @@ html, body {
   outline: none; 
   border-radius: 2px;
   cursor: pointer;
-  font-family: "HelveticaNeue-Medium";
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #f2f2f2;
-  font-weight: 300;
   color: #757575;
   border: 1px solid white;
 }
@@ -106,7 +123,7 @@ html, body {
 
 .autocomplete-suggestions { 
   border: 1px solid #eee; background: #FFF; overflow: auto; 
-  font-family: "HelveticaNeue-Light";
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   cursor: pointer;
 }
