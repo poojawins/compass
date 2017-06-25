@@ -10,6 +10,7 @@ body {
   margin-bottom: 15px;
 }
 
+.contents-header,
 .summary,
 .category {
   padding-bottom: 20px;
@@ -29,4 +30,32 @@ h2 {
 
 h3 {
   font-size: 12pt;
+}
+
+.resources {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.score {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.resources-links li {
+  margin: 10px 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
 }
