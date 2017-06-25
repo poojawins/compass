@@ -2,23 +2,41 @@ $(document).ready(function() {
   if ($(".home").length == 0) { return };
 
   var countries = [
-     { value: 'H&M', data: 'AD' },
-     { value: 'H&R', data: 'AD' },
-     { value: 'Halliburton', data: 'AD' },
-     { value: 'Hewlett-Packard', data: 'AD' },
-     // ...
-     { value: 'Zimbabwe', data: 'ZZ' }
+     { value: 'Brilliant Earth', data: 'b', img: './img/brilliant_earth.jpg' },
+     { value: 'Ben & Jerry\'s', data: 'b', img: "./img/ben_and_jerrys.png" },
+     { value: 'Barnyes', data: 'b', img: "./img/barneys.jpg" },
+     { value: 'Bloomingdales', data: 'b', img: "./img/bloomingdales.png" },
+     { value: 'Pizza Hut', data:  'pz', img: "./img/pizza_hut.png" },
+     { value: 'Procter & Gamble', data: 'pz', img: "./img/pge.png" },
+     { value: 'Pfizer', data: 'pz', img: "./img/pfizer.gif" },
+     { value: 'Prada', data: 'pz', img: "./img/prada.jpg" },
+     { value: 'Halliburton', data: 'hr', img: "./img/hal.png" },
+     { value: 'H&M', data: 'hr', img: "./img/hm.png" },
+     { value: 'Hewlett-Packard', data: 'hr', img: "./img/hp.png" },
   ];
 
   $('#autocomplete').autocomplete({
       lookup: countries,
       onSelect: function (suggestion) {
-        //alert('you selected blah')
+        if (suggestion.data == 'hr') {
+          window.location = "/result.html"
+        };
       },
       beforeRender: function (container) {
-        debugger;
-        $(container).find(".autocomplete-suggestion").each(function(e) {
+        setTimeout(function() {
+        $(container).find(".autocomplete-suggestion").each(function() {
+          var self = this;
+          setTimeout(function(){
+            var html = $(self).html();
+            var $img = $("<img class='search-icon'></img>").appendTo($(self));
+
+            $img.attr("src", window.suggestions[$(self).data().index].img);
+          }, 1);
+          });
         });
+      },
+      onSearchComplete: function(e, i) {
+        window.suggestions = i;
       }
   });
 

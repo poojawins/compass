@@ -1,13 +1,39 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 .home {
    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 60vh;
+}
+
+.home .tagline {
+  font-family: "HelveticaNeue-Light";
 }
 
 .home .logo {
-  height: 160px;
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.home .footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 13px 25px;
+}
+
+.home .footer a {
+  font-family: "HelveticaNeue-Light";
+  cursor: pointer;
+  font-size: 13px;
+  color: #777;
+  padding: 0 10px;
 }
 
 .home-inner {
@@ -38,12 +64,29 @@
   outline: none;
 }
 
-.home .search-container button {
-  margin-top: 20px;
+.home button.login {
+  position: absolute;
+  top: 1.0rem;
+  right: 1.5rem;
+  display: block;
+  font-size: 13px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none; 
+  font-family: "HelveticaNeue-Medium";
+  background-color: #add585;
+  font-weight: 300;
+  color: white;
+}
+.home .search-container button.search {
+  margin-top: 25px;
   display: block;
   font-size: 14px;
   padding: 10px 20px;
   border: none;
+  outline: none; 
   border-radius: 2px;
   cursor: pointer;
   font-family: "HelveticaNeue-Medium";
@@ -64,9 +107,16 @@
 }
 .autocomplete-suggestion { 
 padding: 10px 10px; white-space: nowrap; overflow: hidden; 
-
 }
 .autocomplete-selected { background: #F0F0F0; }
-.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-suggestions strong { 
+font-weight: normal; color: #3399FF; 
+}
 .autocomplete-group { padding: 2px 5px; }
 .autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+.search-icon {
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
