@@ -37,7 +37,7 @@ html, body {
 }
 
 .home-inner {
-  min-width: 450px;
+  min-width: 500px;
   max-width: 80vw;
   height: 100px;
   justify-content: center;
