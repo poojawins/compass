@@ -30,3 +30,8 @@ h2 {
 h3 {
   font-size: 12pt;
 }
+
+.resources {
+  padding: 5px;
+  margin-bottom: 15px;
+}
