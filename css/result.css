@@ -42,9 +42,20 @@ h3 {
   width: 15px;
   border: 1px solid black;
   border-radius: 50%;
-  background-color: red;
 }
 
 .resources-links li {
   margin: 10px 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
 }
